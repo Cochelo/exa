@@ -1,0 +1,45 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20-mar-2017, 19:38:02
+    Author     : LENOVO
+*/
+html,body{
+    height: 100%;
+}
+#mainContainer{
+    width:990px;
+    margin: 0 auto;
+    height: 100%;
+    background-color: pink;
+}
+#MainImage{
+    width:990px;
+    margin: 0 auto;
+}
+footer{
+    text-align: center;
+    position:fixed;
+    bottom:0px;
+    margin: 0 auto;
+    background-color: lightgray;
+    width:990px;
+}
+ul.breadcrumb li {
+    display: inline;
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "|\00a0";
+}
+.column{
+    float:left;
+    width:25%;
+}
+.main-col{
+    width:50%
+}
