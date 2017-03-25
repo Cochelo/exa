@@ -35,3 +35,13 @@ h5{
     border: 2px solid black;
     margin-bottom: 10px;
 }
+@media Screen and (max-width:460px){
+    
+        ul.breadcrumb li {
+        background-color:lightgray;
+    }
+    ul.breadcrumb li:hover{
+        background-color: gray;
+    }
+    
+}

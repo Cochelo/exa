@@ -1,41 +1,31 @@
 html, body {
-    min-height: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }    
 ul{
     padding:0px;
     text-align: center;
-
 }
 ul.breadcrumb li {
-    display:block;
     margin: 2px;
     padding: 4px;
-    background-color:lightgray;
-}
-ul.breadcrumb li:hover{
-    background-color: gray;
-}
-header nav{
-    float:none;
-    display:block;
-    width:100%;
 }
 footer nav{
     display:none;
-}
-.column{
-    width:100%;
-}    
+} 
 .pagesize{
     width:100%;
     margin: 0 auto;
 }
 footer{
+    height:40px;
     position:fixed;
     bottom:0px;
 }
 @media screen and (min-width: 460px) {
+    html, body {
+        min-height: 100%;
+        margin-bottom: 80px;
+    }
     .column{
         float:left;
         width:28%;
@@ -45,32 +35,32 @@ footer{
         width:40%
     }
     header nav{
-        display:inline;
         float:right;
-        width:auto;
     }
     h1{
         display: inline;
     }
     ul.breadcrumb li {
-    display: inline;
+        display: inline;
+    }
+    ul.breadcrumb li+li:before {
+        padding: 8px;
+        color: black;
+        content: "|\00a0";
+    }
+    ul.breadcrumb li,ul.breadcrumb li:hover {
+        background: none;   
+    }
+    footer nav{
+        display:initial;
+    }
+    footer{
+        height: 80px;
+    }
 }
-ul.breadcrumb li+li:before {
-    padding: 8px;
-    color: black;
-    content: "|\00a0";
-}
-
-ul.breadcrumb li,ul.breadcrumb li:hover {
-    background: none;   
-}
-footer nav{
-    display:inherit;
-}
-}
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 989px) {
     .pagesize{
-    width:990px;
-    margin: 0 auto;
-}
+        width:990px;
+        margin: 0 auto;
+    }
 }

@@ -1,18 +1,21 @@
 @media print{
-    
     img{
         display:none;
-    }
-    .column{
-        width:100%;
-    }
-    nav{
-        display:none
     }
     .boxmodel{
         border:0px;
     }
     html, body {
-    margin-bottom: 0px;
-}
+        margin-bottom: 0px;
+    }
+    nav {
+        display:none;
+    }
+    .column{
+        width: 100%;
+    }
+    .pagesize{
+        width:990px;
+        margin: 0 auto;
+    }
 }

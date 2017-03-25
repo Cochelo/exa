@@ -51,10 +51,6 @@ h1{
         display:block;
         margin: 2px;
         padding: 4px;
-        background-color:lightgray;
-    }
-    ul.breadcrumb li:hover{
-        background-color: gray;
     }
     ul.breadcrumb li+li:before {
         padding: 0px;
